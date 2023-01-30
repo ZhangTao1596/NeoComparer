@@ -4,7 +4,7 @@ namespace NeoUtil.Compare
 {
     public static class Comparer
     {
-        static readonly string DefaultTestNode = "http://localhost:21332";
+        static readonly string DefaultTestNode = "http://localhost:20332";
         static readonly string DefaultExpectNode = "http://seed1t5.neo.org:20332";
 
         public static Uri TestN = new(DefaultTestNode);
