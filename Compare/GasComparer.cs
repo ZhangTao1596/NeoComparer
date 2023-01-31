@@ -100,9 +100,9 @@ namespace NeoUtil.Compare
                     var expect = BalanceFromState(value);
                     var actual = GetBalanceFromHistory(client1, root1, account);
                     if (actual != expect)
-                        throw new InvalidOperationException($"balance not match, account={account}, expect={expect}, actual={actual}");
+                        throw new InvalidOperationException($"Balance not match! account={account}, expect={expect}, actual={actual}");
                     else
-                        Console.WriteLine($"Passed! account={account}, balance={actual}");
+                        Console.WriteLine($"Passed! account={account}, actual={actual}, expect={expect}");
                 }
                 if (!states.Truncated) break;
                 fromKey = states.Results.Last().key;
