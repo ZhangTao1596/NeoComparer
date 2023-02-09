@@ -24,13 +24,13 @@ namespace NeoUtil
             while (true)
             {
                 var c = client.GetBlockCountAsync().Result;
-                Console.WriteLine($"block count: {c} {DateTime.Now.ToString("yyyy/MM/dd hh:mm:ss")}");
+                Console.WriteLine($"block count: {c} {DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss")}");
                 if (c == count)
                 {
                     equaled++;
                     if (equaled >= 3 && (best == uint.MaxValue || c == best))
                     {
-                        Console.WriteLine($"Synced. Time: {DateTime.Now.ToString("yyyy/MM/dd hh:mm:ss")}");
+                        Console.WriteLine($"Synced. Time: {DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss")}");
                         break;
                     }
 
